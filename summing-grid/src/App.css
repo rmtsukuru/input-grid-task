@@ -16,3 +16,52 @@
 .App-intro {
   font-size: large;
 }
+
+.grid {
+    margin: 15px 7.5px 7.5px;
+}
+
+@media (min-width: 360px) {
+
+    .grid {
+        margin: 7.5px;
+    }
+}
+
+.grid .grid-item {
+    border: 1px solid #eeb;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-height: 52px;
+    margin: 7.5px 7.5px 15px;
+}
+
+@media (min-width: 360px) {
+
+    .grid .grid-item {
+        width: calc(50% - 15px);
+        display: inline-block;
+        margin: 7.5px;
+    }
+}
+
+@media (min-width: 720px) {
+
+    .grid .grid-item {
+        width: calc(25% - 15px);
+    }
+}
+
+.grid .grid-item input, .grid .grid-item p {
+    margin: 1em 0;
+    font-size: 18px;
+}
+
+.grid .grid-item input {
+    width: 80%;
+    max-width: 250px;
+}
+
+.grid .grid-item p {
+    line-height: 26px;
+}

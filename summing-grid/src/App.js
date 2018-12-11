@@ -32,7 +32,6 @@ class App extends Component {
   render() {
     return (
       <div className="App grid">
-        <p className="App-intro"></p>
         <div className="grid-item">
           <NumberInput
             onChange={(value) => this._setValue(0, value)}
